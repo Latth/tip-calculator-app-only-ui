@@ -1,0 +1,250 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 10px;
+}
+
+body {
+    font-family: 'Space Mono', monospace;
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: hsl(185, 41%, 84%);
+    position: relative;
+}
+
+main h1 {
+    color: hsl(183, 100%, 15%);
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    font-size: 2rem;
+}
+
+.card {
+    padding: 3rem;
+    font-size: 1.8rem;
+    background: hsl(0, 0%, 100%);
+    border-radius: 2rem;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 80rem;
+    font-family: 'Space Mono', monospace;
+}
+
+
+.billSelectors {
+    width: 50%;
+    padding: 3rem;
+    box-sizing: border-box;
+}
+
+.billTotal {
+    position: relative;
+    padding: .5rem;
+}
+
+.billTotal p {
+    font-weight: bold;
+    color: hsl(184, 14%, 56%);
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.billTotal input {
+    width: 100%;
+    height: 100%;
+    background: hsl(189, 41%, 97%);
+    border:none;
+    outline: none;
+    text-align: right;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+    position: relative;
+    display: block;
+}
+
+.billTotal::after {
+    content: url("images/icon-dollar.svg");
+    position:absolute;
+    left: 2rem;
+    bottom: 1.2rem;
+    color: hsl(183, 100%, 15%);
+}
+
+
+
+.selectTip {
+    margin: 3rem 0rem;
+}
+
+.selectTip p{
+    font-weight: bold;
+    color: hsl(184, 14%, 56%);
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.selectTip button, .selectTip input {
+    font-size: 2rem;
+    display: inline-block;
+    padding: 1rem 2rem;
+    width: 27%;
+    margin: .3rem;
+    border: none;
+    border-radius: .5rem;
+    color: hsl(0, 0%, 100%);
+    background: hsl(183, 100%, 15%);
+    cursor: pointer;
+    transition: .5s;
+}
+
+.selectTip input {
+    background: hsl(189, 41%, 97%);
+    color: hsl(183, 100%, 15%);
+    border: none;
+    outline:none;
+    cursor:text;
+}
+
+.selectTip button:hover{
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    transition: .5s;
+}
+
+.selectTip button.active {
+    background: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+
+}
+
+
+.peopleAmount p{
+    font-weight: bold;
+    color: hsl(184, 14%, 56%);
+    font-size: 1.6rem;
+    margin-bottom: .5rem;
+}
+
+.peoplePiece {
+    width: 100%;
+    position: relative;
+}
+
+.peoplePiece input {
+    width: 100%;
+    height: 100%;
+    background: hsl(189, 41%, 97%);
+    border:none;
+    outline: none;
+    text-align: right;
+    border-radius: .5rem;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: hsl(183, 100%, 15%);
+}
+
+.tipTotalPer {
+    font-size: 4rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+}
+
+.totalPer {
+    font-size: 4rem;
+    color: hsl(172, 67%, 45%);
+    font-weight: bold;
+}
+
+.peoplePiece::after {
+    content: url("images/icon-person.svg");
+    position: absolute;
+    left: 1.2rem;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+
+.totalAmounts {
+    width: 50%;
+    height : 100%;
+    background: hsl(183, 100%, 15%);
+    border-radius: 1rem;
+    color: hsl(0, 0%, 100%);
+}
+
+.totalAmounts {
+    padding: 3rem 2rem;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.tipAmountPerson {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+.amountOfElement {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.personText {
+    font-size: 1.3rem;
+    color: hsl(184, 14%, 56%);
+    font-weight: bold;
+}
+
+.totalAmountPerson {
+    width: 100%;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.resetBtn {
+    padding: 1.2rem 0;
+    font-size: 1.5rem;
+    border: none;
+    outline: none;
+    color: hsl(183, 100%, 15%);
+    font-weight: 700;
+    background: hsl(183, 79%, 24%); 
+    border-radius: .5rem;
+    letter-spacing: .2rem;
+}
+
+.resetBtn.active{
+    background: hsl(172, 67%, 45%);
+}
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+
